@@ -335,7 +335,7 @@ HMSTR: " + cein_hms, reply_markup=markup_actions)
          dayCounter[callback.message.chat.id] = dayCounter[callback.message.chat.id] + 1
         except:
          dayCounter[callback.message.chat.id] = 0 + 1
-        if str(int((users_id_complexity[callback.message.chat.id]) * 3) - int(dayCounter[callback.message.chat.id])) == "0":
+        if str(int((users_id_complexity[callback.message.chat.id]) * 6) - int(dayCounter[callback.message.chat.id])) == "0":
             itog(callback.message.chat.id)
         else:
          bot.send_message(callback.message.chat.id, "Итог дня: \n" + "Центр-Инвест:  " + str(users_id_actions_cein[callback.message.chat.id]) + " ( " + znak + str(proc_cein) + " % )\n\
