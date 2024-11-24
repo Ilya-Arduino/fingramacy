@@ -256,12 +256,12 @@ HMSTR: " + cein_hms, reply_markup=markup_actions)
         markup_actions = types.InlineKeyboardMarkup()
         bt_1 = types.InlineKeyboardButton("Назад", callback_data = 'return')
         markup_actions.row(bt_1)
-        choice_list_1 = [1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+        choice_list_1 = [1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1]
         choice_list_2 = [1, 0, 1, 0, 1, 0, 1]
-        choice_list_3 = [1, 0, 1, 0, 1, 0, 1, 0, 0]
+        choice_list_3 = [1, 0, 1, 0, 1, 0, 1, 0, 0, 1]
         choice_list_1_hms = [1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0]
-        choice_list_2_hms = [1, 0, 1, 0, 1, 0]
-        choice_list_3_hms = [1, 0, 1, 0, 1, 0, 1, 0, 0]
+        choice_list_2_hms = [1, 0, 1, 0, 1, 0, 0]
+        choice_list_3_hms = [1, 0, 1, 0, 1, 0, 1, 0, 0, 0]
         if users_id_complexity[callback.message.chat.id] == 1:
          il = random.choice(choice_list_1)
          if il == 0:
